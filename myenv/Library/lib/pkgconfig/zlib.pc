@@ -1,0 +1,13 @@
+prefix=E:/Project/ML_Kaggle/Dry_bean_Dataset/myenv/Library
+exec_prefix=E:/Project/ML_Kaggle/Dry_bean_Dataset/myenv/Library
+libdir=E:/Project/ML_Kaggle/Dry_bean_Dataset/myenv/Library/lib
+sharedlibdir=E:/Project/ML_Kaggle/Dry_bean_Dataset/myenv/Library/lib
+includedir=E:/Project/ML_Kaggle/Dry_bean_Dataset/myenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
