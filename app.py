@@ -24,6 +24,8 @@ ShapeFactor2 = st.number_input("Shape Factor 2")
 ShapeFactor3 = st.number_input("Shape Factor 3")
 ShapeFactor4 = st.number_input("Shape Factor 4")
 
+classes = ['BARBUNYA', 'BOMBAY', 'CALI', 'DERMASON', 'HOROZ', 'SEKER', 'SIRA']
+
 # Submit button
 if st.button("Predict"):
     input_df = pd.DataFrame([{
@@ -46,7 +48,7 @@ if st.button("Predict"):
     }])
 
     try:
-        model = joblib.load("model.pkl")
+        model = joblib.load('./models/gradient.pkl')
     except Exception as e:
         st.error(f"Error loading model: {e}")
         st.stop()
